@@ -1,0 +1,17 @@
+{	
+	"manifest_version": 2,
+    "name" : "VK AntiFeed", //Название расширения
+    "version" : "0.0.1", //Версия
+    "description" : "Удаляет новости из вконтакта. Полностью.", //Краткое описание
+  	"content_scripts" : [
+    {
+      "matches" : [
+		"http://*.vk.com/*",
+		"https://*.vk.com/*"
+      ],
+      "js" : ["jquery.js","script.js"]
+    }
+  ],
+  
+  "icons": { "128": "icon.png" }
+}
